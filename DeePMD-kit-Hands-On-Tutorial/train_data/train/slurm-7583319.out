@@ -1,0 +1,380 @@
+WARNING:tensorflow:From /scratch/gpfs/yifanl/usr/licensed/anaconda3/2020.7/mpi-test/lib/python3.9/site-packages/tensorflow/python/compat/v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:root:Environment variable KMP_BLOCKTIME is empty. Use the default value 0
+WARNING:root:Environment variable KMP_AFFINITY is empty. Use the default value granularity=fine,verbose,compact,1,0
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 0-27
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 28 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "socket".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 2 sockets x 14 cores/socket x 1 thread/core (28 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 0 maps to socket 0 core 0 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 2 maps to socket 0 core 1 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 4 maps to socket 0 core 2 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 6 maps to socket 0 core 3 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 8 maps to socket 0 core 4 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 10 maps to socket 0 core 5 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 12 maps to socket 0 core 6 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 14 maps to socket 0 core 8 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 16 maps to socket 0 core 9 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 18 maps to socket 0 core 10 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 20 maps to socket 0 core 11 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 22 maps to socket 0 core 12 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 24 maps to socket 0 core 13 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 26 maps to socket 0 core 14 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 1 maps to socket 1 core 0 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 3 maps to socket 1 core 1 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 5 maps to socket 1 core 2 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 7 maps to socket 1 core 3 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 9 maps to socket 1 core 4 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 11 maps to socket 1 core 5 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 13 maps to socket 1 core 6 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 15 maps to socket 1 core 8 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 17 maps to socket 1 core 9 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 19 maps to socket 1 core 10 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 21 maps to socket 1 core 11 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 23 maps to socket 1 core 12 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 25 maps to socket 1 core 13 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 27 maps to socket 1 core 14 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11010 thread 0 bound to OS proc set 0
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11011 thread 1 bound to OS proc set 2
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11009 thread 2 bound to OS proc set 4
+DEEPMD INFO    training data with min nbor dist: 0.7572188526801548
+DEEPMD INFO    training data with max nbor size: [112, 209]
+DEEPMD INFO     _____               _____   __  __  _____           _     _  _   
+DEEPMD INFO    |  __ \             |  __ \ |  \/  ||  __ \         | |   (_)| |  
+DEEPMD INFO    | |  | |  ___   ___ | |__) || \  / || |  | | ______ | | __ _ | |_ 
+DEEPMD INFO    | |  | | / _ \ / _ \|  ___/ | |\/| || |  | ||______|| |/ /| || __|
+DEEPMD INFO    | |__| ||  __/|  __/| |     | |  | || |__| |        |   < | || |_ 
+DEEPMD INFO    |_____/  \___| \___||_|     |_|  |_||_____/         |_|\_\|_| \__|
+DEEPMD INFO    Please read and cite:
+DEEPMD INFO    Wang, Zhang, Han and E, Comput.Phys.Comm. 228, 178-184 (2018)
+DEEPMD INFO    installed to:         /tmp/pip-req-build-083rupm3/_skbuild/linux-x86_64-3.9/cmake-install
+DEEPMD INFO    source :              v2.0.3
+DEEPMD INFO    source brach:         master
+DEEPMD INFO    source commit:        159e45d
+DEEPMD INFO    source commit at:     2021-10-15 10:31:09 +0800
+DEEPMD INFO    build float prec:     double
+DEEPMD INFO    build with tf inc:    /scratch/gpfs/yifanl/usr/licensed/anaconda3/2020.7/mpi-test/lib/python3.9/site-packages/tensorflow/include
+DEEPMD INFO    build with tf lib:    
+DEEPMD INFO    ---Summary of the training---------------------------------------
+DEEPMD INFO    running on:           tiger-i21g15
+DEEPMD INFO    computing device:     gpu:0
+DEEPMD INFO    CUDA_VISIBLE_DEVICES: 0,1,2,3
+DEEPMD INFO    Count of visible GPU: 4
+DEEPMD INFO    num_intra_threads:    0
+DEEPMD INFO    num_inter_threads:    0
+DEEPMD INFO    -----------------------------------------------------------------
+DEEPMD INFO    ---Summary of DataSystem: training     -----------------------------------------------
+DEEPMD INFO    found 194 system(s):
+DEEPMD INFO                                        system  natoms  bch_sz   n_bch   prob  pbc
+DEEPMD INFO                  ../data.init/init_system.000     192       1     200  0.008    T
+DEEPMD INFO                  ../data.init/init_system.001      36       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.002      36       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.003      36       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.004     384       1     200  0.008    T
+DEEPMD INFO                  ../data.init/init_system.005      84       2      99  0.004    T
+DEEPMD INFO                  ../data.init/init_system.006      30       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.007      48       2     100  0.004    T
+DEEPMD INFO                  ../data.init/init_system.008      24       4      50  0.002    T
+DEEPMD INFO                  ../data.init/init_system.009      36       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.010      48       2     100  0.004    T
+DEEPMD INFO                  ../data.init/init_system.011      48       2     100  0.004    T
+DEEPMD INFO                  ../data.init/init_system.012      36       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.013      84       2     100  0.004    T
+DEEPMD INFO                  ../data.init/init_system.014      36       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.015      30       3      66  0.003    T
+DEEPMD INFO                  ../data.init/init_system.016      96       1     500  0.021    T
+DEEPMD INFO                  ../data.init/init_system.017      96       1     498  0.021    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.004      36       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.012      36       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.060      30       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.016     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.000     192       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.056      36       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.036      36       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.044      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.024      30       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.020      84       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.008      36       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.048      36       3     100  0.004    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.064      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000000/02.fp/data.052      84       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000001/02.fp/data.028      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000001/02.fp/data.032      24       4      75  0.003    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.025      30       3      49  0.002    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.013      36       3      56  0.002    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.009      36       3      24  0.001    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.045      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.061      30       3      55  0.002    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.065      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.017     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.037      36       3      63  0.003    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.005      36       3      99  0.004    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.001     192       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.021      84       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.053      84       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.057      36       3      56  0.002    T
+DEEPMD INFO      ../data.iters/iter.000002/02.fp/data.049      36       3      78  0.003    T
+DEEPMD INFO      ../data.iters/iter.000003/02.fp/data.029      48       2     127  0.005    T
+DEEPMD INFO      ../data.iters/iter.000003/02.fp/data.041      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000003/02.fp/data.033      24       4      33  0.001    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.002     192       1     129  0.005    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.054      84       2       3  0.000    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.066      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.010      36       3       2  0.000    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.058      36       3       2  0.000    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.006      36       3       8  0.000    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.050      36       3       1  0.000    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.022      84       2       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.018     384       1      85  0.004    T
+DEEPMD INFO      ../data.iters/iter.000004/02.fp/data.046      48       2      21  0.001    T
+DEEPMD INFO      ../data.iters/iter.000005/02.fp/data.042      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000005/02.fp/data.034      24       4      75  0.003    T
+DEEPMD INFO      ../data.iters/iter.000006/02.fp/data.067      96       1      20  0.001    T
+DEEPMD INFO      ../data.iters/iter.000006/02.fp/data.003     192       1      25  0.001    T
+DEEPMD INFO      ../data.iters/iter.000006/02.fp/data.047      48       2       2  0.000    T
+DEEPMD INFO      ../data.iters/iter.000007/02.fp/data.031      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000007/02.fp/data.035      24       4      75  0.003    T
+DEEPMD INFO      ../data.iters/iter.000008/02.fp/data.040      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000008/02.fp/data.028      48       2      13  0.001    T
+DEEPMD INFO      ../data.iters/iter.000008/02.fp/data.032      24       4       3  0.000    T
+DEEPMD INFO      ../data.iters/iter.000009/02.fp/data.041      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000009/02.fp/data.033      24       4       3  0.000    T
+DEEPMD INFO      ../data.iters/iter.000010/02.fp/data.042      48       2      20  0.001    T
+DEEPMD INFO      ../data.iters/iter.000010/02.fp/data.034      24       4       1  0.000    T
+DEEPMD INFO      ../data.iters/iter.000011/02.fp/data.031      48       2       4  0.000    T
+DEEPMD INFO      ../data.iters/iter.000011/02.fp/data.043      48       2      50  0.002    T
+DEEPMD INFO      ../data.iters/iter.000011/02.fp/data.035      24       4       3  0.000    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.004      36       3      25  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.012      36       3      23  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.060      30       3      17  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.016     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.000     192       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.056      36       3      26  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.036      36       3      25  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.044      48       2      57  0.002    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.024      30       3      16  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.020      84       2     107  0.005    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.008      36       3      21  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.048      36       3      24  0.001    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.064      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000012/02.fp/data.052      84       2      98  0.004    T
+DEEPMD INFO      ../data.iters/iter.000013/02.fp/data.040      48       2      78  0.003    T
+DEEPMD INFO      ../data.iters/iter.000013/02.fp/data.028      48       2      88  0.004    T
+DEEPMD INFO      ../data.iters/iter.000013/02.fp/data.032      24       4      21  0.001    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.025      30       3      29  0.001    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.013      36       3      41  0.002    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.009      36       3      32  0.001    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.045      48       2      82  0.003    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.061      30       3      32  0.001    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.065      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.017     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.037      36       3      33  0.001    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.005      36       3      52  0.002    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.001     192       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.021      84       2     147  0.006    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.053      84       2     124  0.005    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.057      36       3      29  0.001    T
+DEEPMD INFO      ../data.iters/iter.000014/02.fp/data.049      36       3      35  0.001    T
+DEEPMD INFO      ../data.iters/iter.000015/02.fp/data.029      48       2     139  0.006    T
+DEEPMD INFO      ../data.iters/iter.000015/02.fp/data.041      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000015/02.fp/data.033      24       4      30  0.001    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.002     192       1     152  0.006    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.062      30       3       4  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.026      30       3       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.038      36       3       5  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.054      84       2      25  0.001    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.066      96       1      63  0.003    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.010      36       3       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.058      36       3       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.006      36       3       8  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.050      36       3       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.022      84       2      25  0.001    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.018     384       1     228  0.010    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.014      36       3       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000016/02.fp/data.046      48       2       9  0.000    T
+DEEPMD INFO      ../data.iters/iter.000017/02.fp/data.030      48       2      20  0.001    T
+DEEPMD INFO      ../data.iters/iter.000017/02.fp/data.042      48       2      39  0.002    T
+DEEPMD INFO      ../data.iters/iter.000017/02.fp/data.034      24       4       3  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.011      36       3       5  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.055      84       2      29  0.001    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.067      96       1      92  0.004    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.013      36       3       9  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.003     192       1     159  0.007    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.047      48       2      22  0.001    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.023      84       2      30  0.001    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.063      30       3       7  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.039      36       3       8  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.059      36       3       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.051      36       3       9  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.017     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.007      36       3       8  0.000    T
+DEEPMD INFO      ../data.iters/iter.000018/02.fp/data.027      30       3       8  0.000    T
+DEEPMD INFO      ../data.iters/iter.000019/02.fp/data.031      48       2      46  0.002    T
+DEEPMD INFO      ../data.iters/iter.000019/02.fp/data.043      48       2      57  0.002    T
+DEEPMD INFO      ../data.iters/iter.000019/02.fp/data.035      24       4      11  0.000    T
+DEEPMD INFO      ../data.iters/iter.000020/02.fp/data.040      48       2      23  0.001    T
+DEEPMD INFO      ../data.iters/iter.000020/02.fp/data.068     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000020/02.fp/data.064      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000021/02.fp/data.041      48       2     119  0.005    T
+DEEPMD INFO      ../data.iters/iter.000021/02.fp/data.065      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000021/02.fp/data.069     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000022/02.fp/data.070     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000022/02.fp/data.066      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000022/02.fp/data.042      48       2      77  0.003    T
+DEEPMD INFO      ../data.iters/iter.000023/02.fp/data.067      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000023/02.fp/data.071     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000023/02.fp/data.043      48       2      49  0.002    T
+DEEPMD INFO      ../data.iters/iter.000024/02.fp/data.040      48       2       6  0.000    T
+DEEPMD INFO      ../data.iters/iter.000024/02.fp/data.068     384       1      15  0.001    T
+DEEPMD INFO      ../data.iters/iter.000024/02.fp/data.064      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000025/02.fp/data.041      48       2      40  0.002    T
+DEEPMD INFO      ../data.iters/iter.000025/02.fp/data.065      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000025/02.fp/data.069     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000026/02.fp/data.070     384       1      94  0.004    T
+DEEPMD INFO      ../data.iters/iter.000026/02.fp/data.066      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000026/02.fp/data.042      48       2      12  0.001    T
+DEEPMD INFO      ../data.iters/iter.000027/02.fp/data.067      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000027/02.fp/data.071     384       1     180  0.008    T
+DEEPMD INFO      ../data.iters/iter.000027/02.fp/data.043      48       2       7  0.000    T
+DEEPMD INFO      ../data.iters/iter.000028/02.fp/data.040      48       2     149  0.006    T
+DEEPMD INFO      ../data.iters/iter.000028/02.fp/data.068     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000028/02.fp/data.064      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000029/02.fp/data.041      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000029/02.fp/data.065      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000029/02.fp/data.069     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000030/02.fp/data.070     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000030/02.fp/data.066      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000030/02.fp/data.042      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000031/02.fp/data.067      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000031/02.fp/data.071     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000031/02.fp/data.043      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000032/02.fp/data.040      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000032/02.fp/data.068     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000032/02.fp/data.064      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000033/02.fp/data.041      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000033/02.fp/data.065      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000033/02.fp/data.069     384       1     294  0.012    T
+DEEPMD INFO      ../data.iters/iter.000034/02.fp/data.070     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000034/02.fp/data.066      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000034/02.fp/data.042      48       2     150  0.006    T
+DEEPMD INFO      ../data.iters/iter.000035/02.fp/data.067      96       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000035/02.fp/data.071     384       1     300  0.013    T
+DEEPMD INFO      ../data.iters/iter.000035/02.fp/data.043      48       2     150  0.006    T
+DEEPMD INFO    --------------------------------------------------------------------------------------
+DEEPMD INFO    training without frame parameter
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10768 thread 3 bound to OS proc set 6
+DEEPMD INFO    built lr
+DEEPMD INFO    built network
+DEEPMD INFO    built training
+DEEPMD INFO    initialize model from scratch
+DEEPMD INFO    start training at lr 2.00e-03 (== 2.00e-03), decay_step 80000, decay_rate 0.940795, final lr will be 1.00e-08
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10994 thread 4 bound to OS proc set 8
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11003 thread 5 bound to OS proc set 10
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11007 thread 6 bound to OS proc set 12
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11005 thread 7 bound to OS proc set 14
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11004 thread 8 bound to OS proc set 16
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10999 thread 9 bound to OS proc set 18
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10996 thread 10 bound to OS proc set 20
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10995 thread 11 bound to OS proc set 22
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11008 thread 12 bound to OS proc set 24
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10997 thread 13 bound to OS proc set 26
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11000 thread 14 bound to OS proc set 1
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10992 thread 15 bound to OS proc set 3
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11002 thread 16 bound to OS proc set 5
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 11006 thread 17 bound to OS proc set 7
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10993 thread 18 bound to OS proc set 9
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10998 thread 19 bound to OS proc set 11
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10991 thread 20 bound to OS proc set 13
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10990 thread 21 bound to OS proc set 15
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10989 thread 22 bound to OS proc set 17
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10988 thread 23 bound to OS proc set 19
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10984 thread 24 bound to OS proc set 21
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10987 thread 25 bound to OS proc set 23
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10985 thread 26 bound to OS proc set 25
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10986 thread 27 bound to OS proc set 27
+DEEPMD INFO    batch    2000 training time 103.40 s, testing time 0.02 s
+OMP: Info #254: KMP_AFFINITY: pid 10768 tid 10983 thread 28 bound to OS proc set 0
+DEEPMD INFO    batch    4000 training time 100.15 s, testing time 0.02 s
+DEEPMD INFO    batch    6000 training time 99.94 s, testing time 0.05 s
+DEEPMD INFO    batch    8000 training time 98.37 s, testing time 0.01 s
+DEEPMD INFO    batch   10000 training time 100.87 s, testing time 0.02 s
+DEEPMD INFO    batch   12000 training time 101.31 s, testing time 0.05 s
+DEEPMD INFO    batch   14000 training time 100.45 s, testing time 0.02 s
+DEEPMD INFO    batch   16000 training time 101.30 s, testing time 0.02 s
+DEEPMD INFO    batch   18000 training time 100.41 s, testing time 0.02 s
+DEEPMD INFO    batch   20000 training time 100.19 s, testing time 0.02 s
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    batch   22000 training time 100.80 s, testing time 0.02 s
+DEEPMD INFO    batch   24000 training time 101.94 s, testing time 0.03 s
+DEEPMD INFO    batch   26000 training time 96.82 s, testing time 0.05 s
+DEEPMD INFO    batch   28000 training time 101.95 s, testing time 0.05 s
+DEEPMD INFO    batch   30000 training time 101.10 s, testing time 0.02 s
+DEEPMD INFO    batch   32000 training time 101.11 s, testing time 0.02 s
+DEEPMD INFO    batch   34000 training time 102.36 s, testing time 0.05 s
+DEEPMD INFO    batch   36000 training time 101.05 s, testing time 0.02 s
+DEEPMD INFO    batch   38000 training time 100.92 s, testing time 0.01 s
+DEEPMD INFO    batch   40000 training time 98.25 s, testing time 0.02 s
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    batch   42000 training time 100.14 s, testing time 0.02 s
+DEEPMD INFO    batch   44000 training time 100.70 s, testing time 0.06 s
+DEEPMD INFO    batch   46000 training time 101.12 s, testing time 0.02 s
+DEEPMD INFO    batch   48000 training time 98.57 s, testing time 0.02 s
+DEEPMD INFO    batch   50000 training time 100.63 s, testing time 0.02 s
+DEEPMD INFO    batch   52000 training time 100.58 s, testing time 0.02 s
+DEEPMD INFO    batch   54000 training time 101.87 s, testing time 0.02 s
+DEEPMD INFO    batch   56000 training time 97.37 s, testing time 0.02 s
+DEEPMD INFO    batch   58000 training time 99.75 s, testing time 0.05 s
+DEEPMD INFO    batch   60000 training time 96.23 s, testing time 0.02 s
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    batch   62000 training time 100.21 s, testing time 0.05 s
+DEEPMD INFO    batch   64000 training time 100.88 s, testing time 0.02 s
+DEEPMD INFO    batch   66000 training time 100.12 s, testing time 0.02 s
+DEEPMD INFO    batch   68000 training time 100.82 s, testing time 0.04 s
+DEEPMD INFO    batch   70000 training time 99.19 s, testing time 0.01 s
+DEEPMD INFO    batch   72000 training time 101.02 s, testing time 0.02 s
+DEEPMD INFO    batch   74000 training time 100.71 s, testing time 0.01 s
+DEEPMD INFO    batch   76000 training time 99.42 s, testing time 0.01 s
+DEEPMD INFO    batch   78000 training time 100.09 s, testing time 0.05 s
+DEEPMD INFO    batch   80000 training time 99.71 s, testing time 0.01 s
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    batch   82000 training time 99.82 s, testing time 0.06 s
+DEEPMD INFO    batch   84000 training time 100.98 s, testing time 0.01 s
+DEEPMD INFO    batch   86000 training time 100.59 s, testing time 0.02 s
+DEEPMD INFO    batch   88000 training time 99.38 s, testing time 0.02 s
+DEEPMD INFO    batch   90000 training time 100.07 s, testing time 0.02 s
+DEEPMD INFO    batch   92000 training time 97.82 s, testing time 0.01 s
+DEEPMD INFO    batch   94000 training time 101.26 s, testing time 0.05 s
+DEEPMD INFO    batch   96000 training time 100.76 s, testing time 0.01 s
+DEEPMD INFO    batch   98000 training time 98.42 s, testing time 0.01 s
+DEEPMD INFO    batch  100000 training time 100.17 s, testing time 0.05 s
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    batch  102000 training time 99.82 s, testing time 0.02 s
+DEEPMD INFO    batch  104000 training time 101.86 s, testing time 0.02 s
+DEEPMD INFO    batch  106000 training time 99.46 s, testing time 0.02 s
+DEEPMD INFO    batch  108000 training time 100.45 s, testing time 0.02 s
+DEEPMD INFO    batch  110000 training time 100.56 s, testing time 0.02 s
+DEEPMD INFO    batch  112000 training time 100.49 s, testing time 0.02 s
+DEEPMD INFO    batch  114000 training time 97.86 s, testing time 0.01 s
+DEEPMD INFO    batch  116000 training time 98.84 s, testing time 0.02 s
+DEEPMD INFO    batch  118000 training time 101.75 s, testing time 0.05 s
+DEEPMD INFO    batch  120000 training time 102.23 s, testing time 0.01 s
+WARNING:tensorflow:From /scratch/gpfs/yifanl/usr/licensed/anaconda3/2020.7/mpi-test/lib/python3.9/site-packages/tensorflow/python/training/saver.py:969: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+DEEPMD WARNING From /scratch/gpfs/yifanl/usr/licensed/anaconda3/2020.7/mpi-test/lib/python3.9/site-packages/tensorflow/python/training/saver.py:969: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    batch  122000 training time 100.69 s, testing time 0.05 s
+DEEPMD INFO    batch  124000 training time 100.35 s, testing time 0.01 s
+DEEPMD INFO    batch  126000 training time 100.03 s, testing time 0.01 s
+DEEPMD INFO    batch  128000 training time 98.63 s, testing time 0.02 s
+DEEPMD INFO    batch  130000 training time 100.06 s, testing time 0.05 s
+DEEPMD INFO    batch  132000 training time 99.20 s, testing time 0.02 s

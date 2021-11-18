@@ -1,0 +1,117 @@
+LAMMPS (20 Sep 2021)
+  using 1 OpenMP thread(s) per MPI task
+# bulk water
+
+units           metal
+boundary        p p p
+atom_style      atomic
+
+neighbor        2.0 bin
+neigh_modify    every 10 delay 0 check no
+
+read_data	water.lmp
+Reading data file ...
+  triclinic box = (0.0000000 0.0000000 0.0000000) to (12.444700 12.444700 12.444700) with tilt (0.0000000 0.0000000 0.0000000)
+  2 by 2 by 4 MPI processor grid
+  reading atoms ...
+  192 atoms
+  read_data CPU = 0.011 seconds
+mass 		1 16
+mass		2 2
+
+pair_style	deepmd compressed.pb
+pair_coeff  * *
+
+velocity        all create 330.0 23456789
+
+fix             1 all nvt temp 330.0 330.0 0.5
+timestep        0.0005
+thermo_style    custom step pe ke etotal temp press vol
+thermo          100
+dump		1 all custom 100 water.dump id type x y z
+
+compute 2 all rdf 50
+fix 3 all ave/time 100 1 100 c_2[*] file tmp.rdf mode vector
+
+run             1000
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+
+- USER-DEEPMD package:
+
+@article{Wang_ComputPhysCommun_2018_v228_p178,
+  author = {Wang, Han and Zhang, Linfeng and Han, Jiequn and E, Weinan},
+  doi = {10.1016/j.cpc.2018.03.016},
+  url = {https://doi.org/10.1016/j.cpc.2018.03.016},
+  year = 2018,
+  month = {jul},
+  publisher = {Elsevier {BV}},
+  volume = 228,
+  journal = {Comput. Phys. Commun.},
+  title = {{DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics}},
+  pages = {178--184}
+}
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Neighbor list info ...
+  update every 10 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 4 4 4
+  2 neighbor lists, perpetual/occasional/extra = 1 1 0
+  (1) pair deepmd, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) compute rdf, occasional, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Per MPI rank memory allocation (min/avg/max) = 4.353 | 4.354 | 4.354 Mbytes
+Step PotEng KinEng TotEng Temp Press Volume 
+       0   -1032.7194    8.1472669   -1024.5721          330   -908.79787    1927.3176 
+     100   -1032.2723    7.7110587   -1024.5612    312.33166   -8782.2918    1927.3176 
+     200   -1032.7843    8.2163049    -1024.568    332.79634    1387.7823    1927.3176 
+     300   -1032.4402    7.8769879   -1024.5633    319.05252    -1544.532    1927.3176 
+     400   -1032.2102    7.6590731   -1024.5511    310.22601    5184.4858    1927.3176 
+     500   -1032.5691     8.023112    -1024.546    324.97118   -269.35959    1927.3176 
+     600   -1032.4169    7.8864226   -1024.5305    319.43466    1211.2946    1927.3176 
+     700   -1032.9512     8.443779   -1024.5074    342.01004   -7182.8687    1927.3176 
+     800   -1032.6193    8.1296452   -1024.4897    329.28624   -4787.9389    1927.3176 
+     900   -1032.1133    7.6555034   -1024.4578    310.08142    3078.8597    1927.3176 
+    1000   -1032.7367      8.30887   -1024.4278    336.54563   -1802.6759    1927.3176 
+Loop time of 12.4626 on 16 procs for 1000 steps with 192 atoms
+
+Performance: 3.466 ns/day, 6.924 hours/ns, 80.240 timesteps/s
+81.8% CPU use with 16 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 10.291     | 10.47      | 10.618     |   2.8 | 84.02
+Neigh   | 0.01365    | 0.017735   | 0.021014   |   1.8 |  0.14
+Comm    | 1.8089     | 1.9547     | 2.137      |   6.7 | 15.68
+Output  | 0.0015672  | 0.0031212  | 0.0033155  |   0.7 |  0.03
+Modify  | 0.01266    | 0.014699   | 0.015754   |   0.8 |  0.12
+Other   |            | 0.001861   |            |       |  0.01
+
+Nlocal:        12.0000 ave          15 max           5 min
+Histogram: 1 0 0 1 0 1 4 2 0 7
+Nghost:        927.625 ave         961 max         901 min
+Histogram: 2 2 3 0 2 2 2 0 2 1
+Neighs:        1278.88 ave        1612 max         516 min
+Histogram: 1 0 0 1 0 3 3 0 3 5
+FullNghs:      2557.75 ave        3199 max        1057 min
+Histogram: 1 0 0 1 0 4 1 2 1 6
+
+Total # of neighbors = 40924
+Ave neighs/atom = 213.14583
+Neighbor list builds = 100
+Dangerous builds not checked
+Total wall time: 0:00:25
